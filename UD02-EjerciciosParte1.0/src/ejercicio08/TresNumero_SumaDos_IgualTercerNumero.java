@@ -29,7 +29,7 @@ public class TresNumero_SumaDos_IgualTercerNumero {
 
 		// Comprobar si la suma de dos de los valores es igual que el otro
 		if (num1 + num2 == num3) {
-			System.out.println("Tras sumar num1 + num2");
+			System.out.println("Tras sumar num1 + num2 es el mismo valor de num3");
 		}
 
 		// Cerrar scanner
