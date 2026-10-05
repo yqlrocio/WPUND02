@@ -24,6 +24,7 @@ public class Par_Impar {
 		
 		reader.close();
 
+		
 	}
 
 }
