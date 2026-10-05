@@ -29,17 +29,22 @@ public class EcuacionSegundoGrado {
 		b = reader.nextDouble();
 		System.out.println("Introduce el valor de c: ");
 		c = reader.nextDouble();
-		
-		// Calcular el valor de x1 y x2
-		x1 = (-b + Math.sqrt(b*b - 4*a*c)) / 2*a;
-		x2 = (-b - Math.sqrt(b*b - 4*a*c)) / 2*a;
 
 		// Mostrar por pantalla las soluciones 
-		if ((b*b - 4*a*c)<0) {
-			System.out.println("¡ERROR!");
+		if (b*b - 4*a*c >= 0) {
+			System.out.println("HAY DOS SOLUCIONES");
+			
+			// Calcular el valor de x1 y x2
+			x1 = (-b + Math.sqrt(b*b - 4*a*c)) / (2*a);
+			x2 = (-b - Math.sqrt(b*b - 4*a*c)) / (2*a);
+			
+			// Mostrar las soluciones
+			System.out.println("Las soluciones son: " + x1 + " y " + x2);
+			
+		} else if (b*b - 4*a*c == 0) {
+			System.out.println("HAY UNA SOLUCIÓN");
 		} else {
-			System.out.println("El valor de x1 --> " + x1);
-			System.out.println("El valor de x1 --> " + x2);
+			System.out.println("NO HAY SOLUCIONES REALES");
 		}
 
 		// Cerrar scanner 

@@ -2,7 +2,7 @@ package ejercicio06;
 
 import java.util.Scanner;
 
-public class CantidadCifra {
+public class Cantidad_Cifra {
 
 	public static void main(String[] args) {
 		
