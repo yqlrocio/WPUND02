@@ -8,16 +8,20 @@ public class Media {
 		
 		// Pedir diez números por teclado y mostrar la media.
 
-		Scanner reader = new Scanner(System.in);
+		Scanner reader = new Scanner(System.in); 
 		
-		Integer num; 
+		double media = 0; 
 		
-		System.out.println("Introduce una nota: ");
-		num = reader.nextInt(); 
-		
-		for (int i = 0; i < num; i++) {
+		for (int i = 1; i <= 10; i++) {
+			Integer num; 
+			System.out.println("Introduce una nota: ");
+			num = reader.nextInt();
 			
+			media += num; 
 		}
+		media /= 3; 
+		
+		System.out.println(media);
 		
 		reader.close();
 	}
