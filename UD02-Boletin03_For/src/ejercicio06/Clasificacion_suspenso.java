@@ -14,7 +14,7 @@ public class Clasificacion_suspenso {
 		
 		// Crear variables  
 		double nota; 
-		boolean suspenso = true; 
+		boolean AlgunSuspenso = true; 
 		
 		// Pedir al usuario que introduzca un número y usando el for calcularemos el factorial
 		System.out.println("Introduce la calificación: ");
@@ -25,9 +25,9 @@ public class Clasificacion_suspenso {
 				nota += reader.nextInt();  
 			}
 		if (nota < 5) {
-			suspenso = true;
+			AlgunSuspenso = true;
 		}
-		if (suspenso) {
+		if (AlgunSuspenso) {
 			System.out.println("Hay al menos un alumno suspenso");
 		} else {
 			System.out.println("Todos los alumnos están aprobados");
