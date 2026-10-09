@@ -24,6 +24,7 @@ public class Clasificacion_suspenso {
 				System.out.println("Introduzca otra calificación: ");
 				nota += reader.nextInt();  
 			}
+		
 		if (nota < 5) {
 			AlgunSuspenso = true;
 		}
