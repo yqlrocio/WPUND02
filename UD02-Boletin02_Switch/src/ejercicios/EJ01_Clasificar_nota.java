@@ -1,8 +1,8 @@
-package ejercicio01;
+package ejercicios;
 
 import java.util.Scanner;
 
-public class Clasificar_nota {
+public class EJ01_Clasificar_nota {
 
 	public static void main(String[] args) {
 		

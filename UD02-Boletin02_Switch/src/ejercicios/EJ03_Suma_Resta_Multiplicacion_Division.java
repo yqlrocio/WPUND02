@@ -1,8 +1,8 @@
-package ejercicio03;
+package ejercicios;
 
 import java.util.Scanner;
 
-public class Suma_Resta_Multiplicacion_Division {
+public class EJ03_Suma_Resta_Multiplicacion_Division {
 
 	public static void main(String[] args) {
 		

@@ -1,8 +1,8 @@
-package ejercicio04;
+package ejercicios;
 
 import java.util.Scanner;
 
-public class Suma_2_Dados {
+public class EJ_04_Suma_2_Dados {
 
 	public static void main(String[] args) {
 		

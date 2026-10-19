@@ -1,8 +1,8 @@
-package ejercicio02;
+package ejercicios;
 
 import java.util.Scanner;
 
-public class Dia_de_la_semana {
+public class EJ02_Dia_de_la_semana {
 
 	public static void main(String[] args) {
 		
