@@ -1,8 +1,8 @@
-package ejercicio07;
+package ejercicios;
 
 import java.util.Scanner;
 
-public class Numero_primo {
+public class EJ07_Numero_primo {
 
 	public static void main(String[] args) {
 		

@@ -1,8 +1,8 @@
-package ejercicio06;
+package ejercicios;
 
 import java.util.Scanner;
 
-public class Clasificacion_suspenso {
+public class EJ06_Clasificacion_suspenso {
 
 	public static void main(String[] args) {
 		

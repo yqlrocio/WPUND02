@@ -1,8 +1,8 @@
-package ejercicio04;
+package ejercicios;
 
 import java.util.Scanner;
 
-public class Suma_Impar_10_numeros {
+public class EJ04_Suma_Impar_10_numeros {
 
 	public static void main(String[] args) {
 		

@@ -1,8 +1,8 @@
-package ejercicio05;
+package ejercicios;
 
 import java.util.Scanner;
 
-public class Factorial {
+public class EJ05_Factorial {
 
 	public static void main(String[] args) {
 		

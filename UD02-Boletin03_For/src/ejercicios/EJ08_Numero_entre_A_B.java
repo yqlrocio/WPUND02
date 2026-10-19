@@ -1,8 +1,8 @@
-package ejercicio08;
+package ejercicios;
 
 import java.util.Scanner;
 
-public class Numero_entre_A_B {
+public class EJ08_Numero_entre_A_B {
 
 	public static void main(String[] args) {
 		

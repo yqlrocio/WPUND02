@@ -1,8 +1,8 @@
-package ejercicio03;
+package ejercicios;
 
 import java.util.Scanner;
 
-public class Media {
+public class EJ03_Media {
 
 	public static void main(String[] args) {
 		

@@ -1,8 +1,8 @@
-package ejercicio01;
+package ejercicios;
 
 import java.util.Scanner;
 
-public class Contador {
+public class EJ01_Contador {
 
 	public static void main(String[] args) {
 		
