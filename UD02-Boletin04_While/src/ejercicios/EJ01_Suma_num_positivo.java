@@ -1,8 +1,8 @@
-package ejercicio01;
+package ejercicios;
 
 import java.util.Scanner;
 
-public class Sumar_Hasta_Numero_Negativo {
+public class EJ01_Suma_num_positivo {
 
 	public static void main(String[] args) {
 		
@@ -12,6 +12,7 @@ public class Sumar_Hasta_Numero_Negativo {
 	// introducirá un número negativo y el algoritmo, antes
 	// de acabar, mostrará la suma de los números positivos 
 	// introducidos por el usuario.
+	
 	// 2
 	// 3
 	// 6
@@ -21,13 +22,16 @@ public class Sumar_Hasta_Numero_Negativo {
 		// Crear scanner
 		Scanner reader = new Scanner (System.in);
 		
+		// Crear variable para almacenar los números y la suma
 		Integer num; 
 		Integer suma = 0; 
 		
+		// Pedir al usuario introducir un número
 		System.out.println("Introduce un número: ");
 		num = reader.nextInt();
 		
-		while (num > 0) {
+		// Mediante un while pedir introducir números hasta que salga un número negativo y se sumara 
+		while (num >= 0) {
 			suma += num; 
 			System.out.println("Introduce otro número: ");
 			num = reader.nextInt();
