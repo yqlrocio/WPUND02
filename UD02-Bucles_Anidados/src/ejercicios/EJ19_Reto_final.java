@@ -1,4 +1,4 @@
-package parte04_Rectangulo_alernado;
+package ejercicios;
 
 import java.util.Scanner;
 

@@ -1,15 +1,15 @@
-package parte01_Rectangulo;
+package ejercicios;
 
 import java.util.Scanner;
 
-public class EJ02_Rectangulo_hueco {
+public class EJ01_Rectangulo_macizo {
 
 	public static void main(String[] args) {
 		
-		// DIBUJAR UN RECTÁNGULO HUECO 
+		// DIBUJAR UN RECTÁNGULO 
 		
 		/*
-		 * Dibuja solo el contorno. Las posiciones interiores son espacios. 
+		 * Pide filas y columnas. Dibuja un rectángulo de asteriscos.
 		 */
 
 		// Crear scanner
@@ -29,11 +29,7 @@ public class EJ02_Rectangulo_hueco {
 		// Dibujar el rectángulo con los valores obtenido
 		for (int i = 0; i < fila; i++) {
 			for (int j = 0; j < columna; j++) {
-				if (i==0 || i==fila-1 || j==0 || j==columna-1) {
-					System.out.print("*");
-				} else {
-					System.out.print(" ");
-				}
+				System.out.print("*");
 			}
 			
 			System.out.println();

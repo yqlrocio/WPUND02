@@ -1,21 +1,16 @@
-package parte02_Triangulo;
+package ejercicios;
 
 import java.util.Scanner;
 
-public class EJ07_Piramide_central {
+public class EJ08_Piramide_invertida {
 
 	public static void main(String[] args) {
-		
-		// DIBUJAR UN TRIÁNGULO RECTÁNGULO: ÁNGULO ARRIBA A LA DERECHA 
-
-		/*
-		 * La cantidad de asteriscos disminuye mientras aumentan los espacios iniciales.
-		 */
+	// DIBUJAR UNA PIRAMIDE INVERTIDA
 
 		// Crear scanner
 		Scanner reader = new Scanner(System.in); 
 		
-		// Crear variable para almacenar la base
+		// Crear variable 
 		Integer N;  
 		
 		// Pedir al usuario las filas y columnas para un rectángulo
@@ -24,8 +19,8 @@ public class EJ07_Piramide_central {
 		
 		// Dibujar el rectángulo con los valores obtenido
 		for (int i = 0; i < N; i++) {
-			for (int j = 0; j < N; j++) {
-				if (j>=i) {
+			for (int j = 0; j < 2*N-1; j++) {
+				if (j>=i && j<2*N-1-i) {
 					System.out.print("*");
 				} else {
 					System.out.print(" ");
@@ -35,6 +30,19 @@ public class EJ07_Piramide_central {
 			System.out.println();
 		}
 		
+//		OTRA FORMA DE HACERLO
+//		for (int i = 0; i < N; i++) {
+//			for (int j = 0; j < 2*N-1; j++) {
+//				if (j < i || j >= 2*N-1-i) {
+//					System.out.print(" ");
+//				} else {
+//					System.out.print("*");
+//				}
+//			}
+//			
+//			System.out.println();
+//		}
+			
 		// Cerrar scanner
 		reader.close();
 		

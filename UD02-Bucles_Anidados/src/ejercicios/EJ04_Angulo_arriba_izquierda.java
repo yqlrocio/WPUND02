@@ -1,15 +1,15 @@
-package parte04_Rectangulo_alernado;
+package ejercicios;
 
 import java.util.Scanner;
 
-public class EJ15_Figura_diagonal_principal {
+public class EJ04_Angulo_arriba_izquierda {
 
 	public static void main(String[] args) {
 		
-		// FIGURA DIAGONAL PRINCIPAL
+		// DIBUJAR UN TRIÁNGULO RECTÁNGULO: ÁNGULO ARRIBA A LA IZQUIERDA 
 
 		/*
-		 * Dibuja un cuadrado de N×N en el que la diagonal principal sea # y el resto *.
+		 * La primera fila tiene N asteriscos y cada fila siguiente uno menos.
 		 */
 
 		// Crear scanner
@@ -19,15 +19,13 @@ public class EJ15_Figura_diagonal_principal {
 		Integer N;  
 		
 		// Pedir al usuario las filas y columnas para un rectángulo
-		System.out.println("Introduce el valor de N: ");
+		System.out.println("Introduce la base de un triángulo: ");
 		N = reader.nextInt();
 		
 		// Dibujar el rectángulo con los valores obtenido
 		for (int i = 0; i < N; i++) {
 			for (int j= 0; j < N; j++) {
-				if (i==j) {
-					System.out.print("#");
-				} else {
+				if (j>=i) {
 					System.out.print("*");
 				}
 			}

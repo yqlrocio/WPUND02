@@ -1,15 +1,15 @@
-package parte02_Triangulo;
+package ejercicios;
 
 import java.util.Scanner;
 
-public class EJ04_Angulo_arriba_izquierda {
+public class EJ03_Angulo_abajo_izquierda {
 
 	public static void main(String[] args) {
 		
-		// DIBUJAR UN TRIÁNGULO RECTÁNGULO: ÁNGULO ARRIBA A LA IZQUIERDA 
-
+		// DIBUJAR UN TRIÁNGULO RECTÁNGULO: ÁNGULO ABAJO A LA IZQUIERDA 
+		
 		/*
-		 * La primera fila tiene N asteriscos y cada fila siguiente uno menos.
+		 * Pide la altura N y construye un triángulo creciente alineado a la izquierda. 
 		 */
 
 		// Crear scanner
@@ -24,11 +24,10 @@ public class EJ04_Angulo_arriba_izquierda {
 		
 		// Dibujar el rectángulo con los valores obtenido
 		for (int i = 0; i < N; i++) {
-			for (int j= 0; j < N; j++) {
-				if (j>=i) {
+			for (int j= 0; j <= i; j++) {
 					System.out.print("*");
 				}
-			}
+			
 			System.out.println();
 		}
 		

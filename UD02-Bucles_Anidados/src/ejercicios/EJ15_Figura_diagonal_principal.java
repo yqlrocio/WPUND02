@@ -1,15 +1,15 @@
-package parte02_Triangulo;
+package ejercicios;
 
 import java.util.Scanner;
 
-public class EJ06_Angulo_arriba_derecha {
+public class EJ15_Figura_diagonal_principal {
 
 	public static void main(String[] args) {
 		
-		// DIBUJAR UN TRIÁNGULO RECTÁNGULO: ÁNGULO ARRIBA A LA DERECHA 
+		// FIGURA DIAGONAL PRINCIPAL
 
 		/*
-		 * La cantidad de asteriscos disminuye mientras aumentan los espacios iniciales.
+		 * Dibuja un cuadrado de N×N en el que la diagonal principal sea # y el resto *.
 		 */
 
 		// Crear scanner
@@ -24,14 +24,13 @@ public class EJ06_Angulo_arriba_derecha {
 		
 		// Dibujar el rectángulo con los valores obtenido
 		for (int i = 0; i < N; i++) {
-			for (int j = 0; j < N; j++) {
-				if (j>=i) {
-					System.out.print("*");
+			for (int j= 0; j < N; j++) {
+				if (i==j) {
+					System.out.print("#");
 				} else {
-					System.out.print(" ");
+					System.out.print("*");
 				}
 			}
-			
 			System.out.println();
 		}
 		

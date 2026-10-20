@@ -1,4 +1,4 @@
-package parte03_Rombo;
+package ejercicios;
 
 public class EJ09_Rombo {
 
