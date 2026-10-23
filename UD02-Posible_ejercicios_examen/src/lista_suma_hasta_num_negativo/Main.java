@@ -13,18 +13,18 @@ public class Main {
 		
 		public static void main(String[] args) {
 			
-			List<Integer> lista = new ArrayList<>(); 
+			List<Integer> recorrido = new ArrayList<>(); 
 			
-			System.out.println(lista);
+			System.out.println(recorrido);
 			
-			lista.add(2); 
-			lista.add(3); 
-			lista.add(4); 
-			lista.add(-1); 
-			lista.add(5); 
+			recorrido.add(2); 
+			recorrido.add(3); 
+			recorrido.add(4); 
+			recorrido.add(-1); 
+			recorrido.add(5); 
 			
-			System.out.println(lista);
-			System.out.println(lista.size());
+			System.out.println(recorrido);
+			System.out.println(recorrido.size());
 			System.out.println(pasosLaberinto(recorrido));
 
 		}
