@@ -18,7 +18,7 @@ public class EJ07_Piramide_central {
 		System.out.println("Introduce el valor de N: ");
 		N = reader.nextInt();
 		
-		// Dibujar el rectángulo con los valores obtenido
+		// Dibujar la pirámide con los valores obtenido
 		for (int i = 0; i < N; i++) {
 			for (int j= 0; j < 2*N-1; j++) {
 				if (j >= N-i-1 && j <= N+i-1) {
@@ -30,6 +30,7 @@ public class EJ07_Piramide_central {
 		
 			System.out.println();
 		}
+		
 		// Cerrar scanner
 		reader.close();
 		

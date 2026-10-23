@@ -5,7 +5,12 @@ import java.util.Scanner;
 public class EJ08_Piramide_invertida {
 
 	public static void main(String[] args) {
-	// DIBUJAR UNA PIRAMIDE INVERTIDA
+	
+		// DIBUJAR UNA PIRAMIDE INVERTIDA
+		
+		/*
+		 * Ejemplo de entrada: N = 5
+		 */
 
 		// Crear scanner
 		Scanner reader = new Scanner(System.in); 

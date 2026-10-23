@@ -6,7 +6,7 @@ public class EJ01_Rectangulo_macizo {
 
 	public static void main(String[] args) {
 		
-		// DIBUJAR UN RECTÁNGULO 
+		// DIBUJAR UN RECTÁNGULO MACIZO
 		
 		/*
 		 * Pide filas y columnas. Dibuja un rectángulo de asteriscos.
