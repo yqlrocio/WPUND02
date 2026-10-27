@@ -20,6 +20,8 @@ public class TestEjercicios {
         
         List<Integer> magia = List.of(3, 9, 7, 4, 10);
         
+        List<Integer> num = List.of(3, 9, 0, 4, 10, 0, -3, 5); 
+        
         System.out.println("\n--- SUMAS ---");
         System.out.println("Suma 1 (for-each): " + Ejercicios.suma1(numeros));
         System.out.println("Suma 2 (for):      " + Ejercicios.suma2(numeros));
@@ -62,6 +64,13 @@ public class TestEjercicios {
         System.out.println(Ejercicios.pasosLaberinto(recorrido)); // 9 
         
         System.out.println("\n--- NIVEL MEDIO DE MAGIA EN LAS CALABAZAS ---");
-        System.out.println(Ejercicios.promedioMagia(magia)); // 9 
+        System.out.println(Ejercicios.promedioMagia(magia)); // 8.67
+        
+        System.out.println("\n--- RECURSIVIDAD: CUENTA ATRÁS DE SUSTOS ---");
+        Ejercicios.cuentaAtrasSustos(4); 
+        
+        System.out.println("\n--- LA SUMA ENTRE LOS DOS CEROS ---");
+        System.out.println(Ejercicios.sumaEntreCeros(num)); // 4+10=14
+        
     }
 }

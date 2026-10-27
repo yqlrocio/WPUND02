@@ -114,6 +114,17 @@ public class Ejercicios {
         return (double) suma / numeros.size();
     }
     
+    // 10. Calcular el factorial
+    public static Integer factorial (Integer n) {
+    		Integer res; 
+    		if (n == 0) {
+    			res = 1;
+    		} else {
+    			res = n * factorial (n-1); 
+    		}
+    		return res; 
+    }
+    
     //TODO Hacer aquí los ejercicios del examen 
     //los haremos con distintos bucles
     
@@ -167,24 +178,59 @@ public class Ejercicios {
      
      // EJ04. NIVEL MEDIO DE MAGIA EN LAS CALABAZAS 
      public static Double promedioMagia(List<Integer> niveles) {
-    	 
-    	 Integer suma = 0;
-    	    int contador = 0;
+    	
+    	Integer suma = 0;
+	    int contador = 0;
 
-    	    for (int i = 0; i < niveles.size(); i++) {
-    	        if (niveles.get(i) >= 5) {
-    	            suma += niveles.get(i);
-    	            contador++;
-    	        }
-    	    }
+	    for (int i = 0; i < niveles.size(); i++) {
+	        if (niveles.get(i) >= 5) {
+	            suma += niveles.get(i);
+	            contador++;
+	        }
+	    }
 
-    	    if (contador == 0) {
-    	        return 0.0; // Para evitar la división por cero si ningún valor es >= 5
-    	    }
+	    if (contador == 0) {
+	        return 0.0; // Para evitar la división por cero si ningún valor es >= 5
+	    }
 
-    	    return (double) suma / contador;
+	   double resultado = (double) suma / contador; 
+	    return  Math.round((resultado) * 100.0) / 100.0;
      }
 
+     // EJ05. RECURSIVIDAD: CUENTA ATRÁS DE SUSTOS
+     public static void cuentaAtrasSustos(Integer n) {
     
+    	if (n == 0) { 
+    		System.out.println("¡Susto final!");
+    	} else {
+    		System.out.println("Boo " + n);
+    		cuentaAtrasSustos (n-1); 
+    	}
+     }
+     
+     // EJ06. LA SUMA DE ENTRE LOS DOS CEROS
+     public static Integer sumaEntreCeros(List<Integer> num) {
+    	    if (num == null) return 0;
+
+    	    Integer suma = 0;
+
+    	    for (int i = 0; i < num.size(); i++) {
+    	    	// Buscamos el primer 0
+    	        if (num.get(i) == 0) {
+    	            // Empezamos a sumar desde el primer cero (i + 1)
+    	            for (int j = i + 1; j < num.size(); j++) {
+    	            	suma += num.get(j);
+    	                // Si encontramos el segundo cero, salimos del bucle 
+    	                if (num.get(j) == 0) {
+    	                    break;
+    	                }
+    	            }
+    	            // Salimos del bucle principal 
+    	            break;
+    	        }
+    	    }
+    	    return suma;
+    	}
+     
      
 }
