@@ -119,17 +119,31 @@ public class Ejercicios {
     
     // 10. Calcular el factorial
     public static Integer factorial (Integer n) {
-    		Integer res; 
-    		if (n == 0) {
-    			res = 1;
-    		} else {
-    			res = n * factorial (n-1); 
-    		}
-    		return res; 
+    		
+    	Integer res; 
+		if (n == 0) {
+			res = 1;
+		} else {
+			res = n * factorial (n-1); 
+		}
+		return res; 
     }
     
-    //TODO Hacer aquí los ejercicios del examen 
-    //los haremos con distintos bucles
+    // 11. Carcular la suma de los numeros de una lista entre dos cero
+    public static int sumaEntreDosCeros(List<Integer> list) {
+    	
+    	int suma = 0;
+    	
+    	int primero = list.indexOf(0);
+    	int ultimo = list.lastIndexOf(0); 
+    	
+    	for (int i = primero +1; i < ultimo; i++) {
+    		suma += list.get(i); 
+    	}
+    	return suma; 
+    }
+    
+    //TODO Hacer aquí los ejercicios del examen, los haremos con distintos bucles
     
     // EJ01. CONTROL DE ACCESO AL BAILE DE LOS MONSTRUOS
     public static boolean puedeEntrar(Integer edad, boolean acompanado, String criatura) {
