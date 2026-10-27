@@ -210,7 +210,8 @@ public class Ejercicios {
      
      // EJ06. LA SUMA DE ENTRE LOS DOS CEROS
      public static Integer sumaEntreCeros(List<Integer> num) {
-    	    if (num == null) return 0;
+    	   
+    	 if (num == null) return 0;
 
     	    Integer suma = 0;
 
