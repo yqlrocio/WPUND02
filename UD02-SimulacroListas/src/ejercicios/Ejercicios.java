@@ -93,12 +93,15 @@ public class Ejercicios {
     // 8. Calcular la media mediante for clásico.
     public static Double media2(List<Integer> numeros) {
 
+    	double res = 0.0; 
         Integer suma = 0;
-        for (int i = 0; i < numeros.size(); i++) {
-            suma += numeros.get(i);
+        if (numeros.size() != 0) {
+        	for (int i = 0; i < numeros.size(); i++) {
+                suma += numeros.get(i);
+            }
+            res = (double) suma / numeros.size();
         }
-
-        return (double) suma / numeros.size();
+        return res; 
     }
 
     // 9. Calcular la media mediante while.
