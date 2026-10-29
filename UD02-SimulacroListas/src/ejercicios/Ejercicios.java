@@ -117,7 +117,7 @@ public class Ejercicios {
         return (double) suma / numeros.size();
     }
     
-    // 10. Calcular el factorial
+    // 10. Calcular el factorial (PUEDE ENTRAR O ESTA O EL EJERCICIO 11: COMO EJERCICIO DE RECURSIVIDAD)
     public static Integer factorial (Integer n) {
     		
     	Integer res; 
@@ -129,7 +129,21 @@ public class Ejercicios {
 		return res; 
     }
     
-    // 11. Carcular la suma de los numeros de una lista entre dos cero
+    // 11. Fibonacci
+    public static Integer fibonacci (Integer n) {
+    	
+    	Integer res = 0; 
+    	if (n == 0) {
+    		res = 0;
+    	} else if (n == 1) {
+    		res = 1; 
+    	} else {
+    		res = fibonacci (n-1) + fibonacci (n-2);
+    	}
+    	return res;
+    }
+    
+    // 12. Carcular la suma de los numeros de una lista entre dos cero
     public static int sumaEntreDosCeros(List<Integer> list) {
     	
     	int suma = 0;
