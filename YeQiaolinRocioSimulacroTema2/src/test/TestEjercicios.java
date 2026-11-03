@@ -1,17 +1,12 @@
 package test;
 
-import java.util.ArrayList;
 import java.util.List;
 import ejercicios.Ejercicios;
-import utiles.Utiles;
 
 public class TestEjercicios {
 
     public static void main(String[] args) {
-        
-    	
-        List<Integer> num = List.of(3, 9, 0, 4, 10, 0, -3, 5); 
-        
+    	        
         System.out.println("\n--- EJERCICIO 1 ---");
         System.out.println("El precio de la entrada sería: " + Ejercicios.precioEntrada(10, "SABADO", true));   // 7 
         System.out.println("El precio de la entrada sería: " + Ejercicios.precioEntrada(35, "LUNES", false)); // 8 

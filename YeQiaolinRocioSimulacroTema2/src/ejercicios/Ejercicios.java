@@ -79,7 +79,6 @@ public class Ejercicios {
 		public static Integer factorialConSaltos(Integer numero, Integer salto) {
 			
 			Integer res = 1; 
-			Integer i = salto; 
 			
 			if (numero <= 0) {
 				return res;
