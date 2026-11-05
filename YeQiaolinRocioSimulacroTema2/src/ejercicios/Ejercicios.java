@@ -115,6 +115,7 @@ public class Ejercicios {
 	    // 6. EJERCICIO 6
 		public static Integer primeraPosicionSumaCifras(List<Integer> numeros, Integer sumaObjetivo) {
 			
+			
 		}
 
 	    // 7. EJERCICIO 7

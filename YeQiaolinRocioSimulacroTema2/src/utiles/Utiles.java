@@ -42,4 +42,13 @@ public class Utiles {
         
     	return factorial;
     }
+    
+    public static Integer sumaCifras (Integer n) {
+    	Integer suma = 0; 
+    	while(n!=0) {
+    		suma += n%10;
+    		n = n/10; 
+    	}
+    	return suma; 
+    }
 }
