@@ -112,5 +112,27 @@ public class Ejercicios {
 	        return contadorPicos;
 		}
 		
+	    // 6. EJERCICIO 6
+		public static Integer primeraPosicionSumaCifras(List<Integer> numeros, Integer sumaObjetivo) {
+			
+		}
+
+	    // 7. EJERCICIO 7
+		public static Integer countNonOverlappingPairs(List<Integer> numbers) {
+			
+			Integer res = 0; 
+			
+			for (int i = 0; i < numbers.size() - 1; i++) {
+				int primerNumero = numbers.get(i); 
+				int segundoNumero = numbers.get(i + 1); 
+				
+				if ((primerNumero + segundoNumero)%5==0) {
+					res++; 
+					i++;
+				}
+			}
+			return res; 
+		}
+
 		
 }

@@ -32,7 +32,15 @@ public class TestEjercicios {
         System.out.println("El pico sería --> " + Ejercicios.contarPicos(List.of(1, 2), 1)); // 0
         
         System.out.println("\n--- EJERCICIO 6 ---");
-        
-    
+        System.out.println(Ejercicios.primeraPosicionSumaCifras(List.of(42, 153, 85, 29), 9)); // 1
+        System.out.println(Ejercicios.primeraPosicionSumaCifras(List.of(42, 153, 85, 29), 13)); // 2; 
+        System.out.println(Ejercicios.primeraPosicionSumaCifras(List.of(0, 31), 0)); // 0
+        System.out.println(Ejercicios.primeraPosicionSumaCifras(List.of(42, 153), 18)); // -1
+
+        System.out.println("\n--- EXERCISE 7 ---");
+        System.out.println(Ejercicios.countNonOverlappingPairs(List.of(2, 3, 2, 8, 7))); //2
+        System.out.println(Ejercicios.countNonOverlappingPairs(List.of(1, 2, 3))); // 1
+        System.out.println(Ejercicios.countNonOverlappingPairs(List.of(1, 1, 1))); // 0
+
     }
 }
