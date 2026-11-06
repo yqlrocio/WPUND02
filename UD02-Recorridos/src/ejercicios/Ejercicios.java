@@ -1,0 +1,186 @@
+package ejercicios;
+
+import java.util.List;
+
+import utiles.Utiles;
+
+public class Ejercicios {
+
+	// -------------------- 
+	//       CONTADOR 
+	// --------------------
+	// De los 20 primeros números cúantos son pares?
+	
+	public static Integer cuentaParesDeLos20PrimerosNumeros() {
+		Integer res = 0; 
+		for (int i = 1; i <= 20; i++) {
+			if (i%2==0) {
+				res++;
+			}
+		}
+		return res; 
+	}
+	
+	// Método que me diga cúantos pares hay hasta un entero n 
+	// pasado como parámetro
+	
+	public static Integer cuentaParesHasta(Integer n) {
+		Integer res = 0; 
+		for (int i = 1; i <= n; i++) {
+			if (i%2==0) {
+				res++;
+			}
+		}
+		return res; 
+	}
+		
+	// Método que me diga cúantos pares hay entre dos enteros a y b
+	// pasados como parámetro. Suponemos que a<b
+		
+	public static Integer cuentaParesEntre(Integer a, Integer b) {
+		Integer res = 0; 
+		for (int i = a; i <= b; i++) {
+			if (i%2==0) {
+				res++;
+			}
+		}
+		return res; 
+	}
+			
+	// Método que cuenta cuántos pares tiene una lista de enteros que 
+	// se pasa como parámetro
+//			public static Integer cuentaParesEn(List<Integer> lis) {
+//				Integer res = 0;
+//					for (int i = 0; i < lis.size(); i++) {
+//						Integer e = lis.get(i); 
+//						if (e%2==0) {
+//							res++; 
+//						}
+//					}
+//					return res; 
+//			}
+	public static Integer cuentaParesEn(List<Integer> lis) {
+		Integer res = 0;
+			for (Integer e:lis) {
+				if (e%2==0) {
+					res++; 
+				}
+			}
+			return res; 
+	}
+	
+	public static Integer cuentaPrimosEn(List<Integer> lis) {
+		Integer res = 0;
+			for (Integer e:lis) {
+				if (Utiles.esPrimo(e)) {
+					res++; 
+				}
+			}
+			return res; 
+	}
+
+	// -------------------- 
+	//       SUMA 
+	// --------------------
+			
+//			public static Double sumaListaDeReales(List<Doble> lis) {
+//			Double res = 0.0; 
+//			for (Double e : lis) {
+//				res += e; 
+//			}
+//			return res;
+//		}
+			
+	public static Double sumaListaDeReales(List<Double> lis) {
+		Double res = 0.0; 
+		for (int i=0; i<lis.size(); i++) {
+			Double e =lis.get(i); 
+			res += e; 
+		}
+		return res; 
+	}
+	//Suma de los elementos de una lista mayores o iguales que un cierto umbral
+	public static Double sumaMayoresIgualesA(List<Double> lis, Double umbral) {
+		Double res = 0.0; 
+		for (int i = 0; i < lis.size(); i++) {
+			Double e = lis.get(i); 
+			if (e >= umbral) {
+				res += e;
+			}
+		}
+		return res; 
+	}
+	
+	// -------------------- 
+	//   BÚSQUEDA (EXISTE) 
+	// --------------------
+	
+	// Método que dada una lista de enteros devuelva si tiene o no algún primo
+//			public static Boolean tienePrimo(List<Integer> lis) {
+//				Boolean res = false; 
+//				int i = 0; 
+//				while (i<lis.size()) {
+//					Integer e = lis.get(i);
+//					if(Utiles.esPrimo(e)) {
+//						res = true; 
+//						break; 
+//					}
+//					i++; 
+//				}
+//				return res; 
+//			}
+			
+	public static Boolean tienePrimo(List<Integer> lis) {
+		Boolean res = false; 
+		for (Integer e : lis) {
+			if(Utiles.esPrimo(e)) {
+				res = true; 
+				break; 
+			}
+		}
+		return res; 
+	}
+		
+	// ----------------------------- 
+	//   MÉTODO DE SUMA Y BÚSQUEDA 
+	// ----------------------------- 
+
+	// Método que dada una lista como parámetro me devuelva cierto si la suma 
+	// de sus primos es primmo
+	public static Boolean sumaDePrimosEsPrimo(List<Integer> lis) {
+		Boolean res = false; 
+		Integer suma = 0; 
+		for (int i = 0; i < lis.size(); i++) {
+			Integer e = lis.get(i);
+			if (Utiles.esPrimo(e)) {
+				suma += e; 
+			}
+		}
+		if (Utiles.esPrimo(suma)) {
+			res = true;
+		}
+		return res; 
+	}
+	
+	// ----------------------------- 
+	//   COMPROBACIÓN (PARA TODO) 
+	// ----------------------------- 
+			
+	// Método que dada una lista como parámetro compruebe
+	// si todos sus elementos son primos
+	public static Boolean todosPrimos(List<Integer> lis) {
+		Boolean res = true; 
+		for (Integer e : lis) {
+			if (!Utiles.esPrimo(e)) {
+				res = false; 
+				break;
+			}
+		}
+		return res; 
+	}
+			
+	// -------------------
+	//   MÁXIMO Y MÍNIMO 
+	// -------------------	
+		
+}

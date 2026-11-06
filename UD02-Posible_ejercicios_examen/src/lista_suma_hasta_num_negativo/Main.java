@@ -42,10 +42,8 @@ public class Main {
 				break; 
 			}
 			i++; 
-			
-			return suma; 
 		}
-
+			return suma; 
 	}
 }
 
