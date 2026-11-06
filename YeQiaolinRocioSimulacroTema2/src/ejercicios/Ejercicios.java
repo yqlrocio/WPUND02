@@ -115,7 +115,17 @@ public class Ejercicios {
 	    // 6. EJERCICIO 6
 		public static Integer primeraPosicionSumaCifras(List<Integer> numeros, Integer sumaObjetivo) {
 			
+			Integer pos = -1; 
+			int i = 0; 
 			
+			while (i < numeros.size()) {
+				if (Utiles.sumaCifras(numeros.get(i))==sumaObjetivo) {
+					pos = i; 
+					break;
+				}
+				i++;
+			}
+			return pos; 
 		}
 
 	    // 7. EJERCICIO 7
