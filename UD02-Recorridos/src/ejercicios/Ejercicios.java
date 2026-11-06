@@ -1,5 +1,6 @@
 package ejercicios;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import utiles.Utiles;
@@ -178,7 +179,20 @@ public class Ejercicios {
 		}
 		return res; 
 	}
-			
+		
+	// -------------------
+	//      SELECCIÓN 
+	// -------------------	
+	public static List<Integer> seleccionaPrimos(List<Integer> lis) {
+		List<Integer> res = new ArrayList<>(); 
+		for (Integer e : lis) {
+			if (!Utiles.esPrimo(e)) {
+				res.add(e);
+			}
+		}
+		return res; 
+	}
+	
 	// -------------------
 	//   MÁXIMO Y MÍNIMO 
 	// -------------------	
