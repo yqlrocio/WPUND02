@@ -180,6 +180,34 @@ public class Ejercicios {
 		return res; 
 	}
 		
+	//Dada una lista, comprobar si es creciente
+//	public static Boolean esCreciente(List<Integer> lis) {
+//		Boolean res=true;
+//		for (int i = 1; i < lis.size(); i++) {
+//			Integer e = lis.get(i);
+//			Integer anterior = lis.get(i-1);
+//			if (e<anterior) {
+//				res=false;
+//				break;
+//			}
+//		}
+//		return res;
+//	}
+	public static Boolean esCreciente(List<Integer> lis) {
+		Boolean res=true;
+		int i = 1;
+		while ( i < lis.size() ) {
+			Integer e = lis.get(i);
+			Integer anterior = lis.get(i-1);
+			if (e<anterior) {
+				res=false;
+				break;
+			}
+			i++;
+		}
+		return res;
+	}
+	
 	// -------------------
 	//      SELECCIÓN 
 	// -------------------	
@@ -196,6 +224,7 @@ public class Ejercicios {
 	// -------------------
 	//   MÁXIMO Y MÍNIMO 
 	// -------------------	
+
 	
 	// Método que dada una lista de enteros me devuelva el máximo
 //	public static Integer maximo(List<Integer> lis) {
@@ -217,6 +246,30 @@ public class Ejercicios {
 			}
 		}
 		return res; 
+	}
+	
+	
+//	public static Integer maximo(List<Integer> lis) {
+//		 return Collections.max(lis);
+//	}
+	
+	//Algoritmo de ordención de burbuja
+	public static List<Integer> ordena(List<Integer> lis){
+		Boolean ordenado = false;
+		while (!ordenado) {
+			ordenado=true;
+			for(int i=0;i<lis.size()-1;i++) {
+				Integer e = lis.get(i);
+				Integer sig = lis.get(i+1);
+				if (e>sig) {
+					Integer aux = lis.get(i);
+					lis.set(i, sig);
+					lis.set(i+1, aux);
+					ordenado=false;
+				}
+			}
+		}
+		return lis;
 	}
 	
 	
