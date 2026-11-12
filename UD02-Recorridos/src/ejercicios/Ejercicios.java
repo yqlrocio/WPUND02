@@ -224,7 +224,6 @@ public class Ejercicios {
 	// -------------------
 	//   MÁXIMO Y MÍNIMO 
 	// -------------------	
-
 	
 	// Método que dada una lista de enteros me devuelva el máximo
 //	public static Integer maximo(List<Integer> lis) {
