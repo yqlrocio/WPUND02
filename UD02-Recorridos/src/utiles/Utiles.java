@@ -1,5 +1,7 @@
 package utiles;
 
+import java.util.List;
+
 public class Utiles {
 
     // Un número primo es mayor que 1 y solo es divisible entre 1 y él mismo.

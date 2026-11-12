@@ -224,27 +224,30 @@ public class Ejercicios {
 	// -------------------
 	//   MÁXIMO Y MÍNIMO 
 	// -------------------	
-	//Método que dada una lista de enteros me devuelva el máximo
+
+	
+	// Método que dada una lista de enteros me devuelva el máximo
 //	public static Integer maximo(List<Integer> lis) {
-//		Integer res=lis.get(0);
-//		for(int i = 1; i<lis.size(); i++) {
-//			Integer e = lis.get(i);
+//		Integer res = lis.get(0); 
+//		for (int i = 1; i < lis.size(); i++) {
+//			Integer e = lis.get(i); 
 //			if (e>res) {
-//				res=e;
+//				res = e;
 //			}
 //		}
-//		return res;
+//		return res; 
 //	}
-
+	
 	public static Integer maximo(List<Integer> lis) {
-		Integer res=null;
-		for(Integer e:lis) {
-			if (res==null ||  e>res ) {
-				res=e;
+		Integer res = null; 
+		for (Integer e:lis) {
+			if (res == null || e>res) {
+				res = e;
 			}
 		}
-		return res;
+		return res; 
 	}
+	
 	
 //	public static Integer maximo(List<Integer> lis) {
 //		 return Collections.max(lis);
