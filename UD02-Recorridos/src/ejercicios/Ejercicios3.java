@@ -62,6 +62,7 @@ public class Ejercicios3 {
 //					}
 //					return res; 
 //			}
+	
 	public static Integer cuentaParesEn(List<Integer> lis) {
 		Integer res = 0;
 			for (Integer e:lis) {
