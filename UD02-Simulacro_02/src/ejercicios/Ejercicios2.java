@@ -6,7 +6,7 @@ import utiles.Utiles;
 
 public class Ejercicios {
 
-    // 1. EJERCICIO 1
+    // 1. EJERCICIO 1; CALCULAR PRECIO DE LA ENTRADA
 	public static Integer precioEntrada(Integer edad, String dia, Boolean socio) {
 		
 		Integer precioTicket = 0; 
@@ -37,8 +37,7 @@ public class Ejercicios {
 		return precioTicket; 
 	}
 		
-		
-	    // 2. EJERCICIO 2
+	    // 2. EJERCICIO 2; DIBUJAR UNA Z
 		public static void dibujarZ(Integer lado) {
 		    for (int i = 0; i < lado; i++) {
 		        for (int j = 0; j < lado; j++) {
@@ -52,7 +51,7 @@ public class Ejercicios {
 		    }
 		}
 		
-	    // 3. EJERCICIO 3
+	    // 3. EJERCICIO 3; SUMA DE NUMEROS ESPECIALES
 		public static Integer sumaPrimerosEspeciales(Integer inicio, Integer fin, Integer cantidad) {
 			
 			Integer numerosEspeciales = 0; 
@@ -75,7 +74,7 @@ public class Ejercicios {
 		return sumaNumerosEspeciales; 
 		}
 		
-	    // 4. EJERCICIO 4
+	    // 4. EJERCICIO 4; CALCULAR EL FACTORIAL CON SALTO
 		public static Integer factorialConSaltos(Integer numero, Integer salto) {
 			
 			Integer res = 1; 
@@ -88,7 +87,7 @@ public class Ejercicios {
 			return res; 
 		}
 		
-	    // 5. EJERCICIO 5
+	    // 5. EJERCICIO 5; CUENTA LOS VALORES CENTRALES QUE SUPERAN A SUS DOS VECINOS POR POR LA DIFERENCIA MÍNIMA INDICADA O MÁS 
 		public static Integer contarPicos(List<Integer> alturas, Integer diferenciaMinima) {
 	        // Si la lista tiene menos de tres elementos, no puede tener picos intermedios
 	        if (alturas == null || alturas.size() < 3) {
@@ -112,7 +111,7 @@ public class Ejercicios {
 	        return contadorPicos;
 		}
 		
-	    // 6. EJERCICIO 6
+	    // 6. EJERCICIO 6; DEVUELVE EL ÍNDICE DEL PRIMER NÚMERO CUYA SUMA DE CIFRAS COINCIDA CON EL OBJETIVO INDICADO, O -1 SI NO EXISTE
 		public static Integer primeraPosicionSumaCifras(List<Integer> numeros, Integer sumaObjetivo) {
 			
 			Integer pos = -1; 
