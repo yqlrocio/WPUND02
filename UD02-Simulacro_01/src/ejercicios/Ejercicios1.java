@@ -3,7 +3,7 @@ package ejercicios;
 import java.util.List;
 import utiles.Utiles;
 
-public class Ejercicios {
+public class Ejercicios1 {
 
     // 1. Sumar una lista mediante for-each.
     public static Integer suma1(List<Integer> numeros) {

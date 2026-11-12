@@ -5,7 +5,7 @@ import java.util.List;
 
 import utiles.Utiles;
 
-public class Ejercicios {
+public class Ejercicios3 {
 
 	// -------------------- 
 	//       CONTADOR 

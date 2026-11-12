@@ -4,7 +4,7 @@ import java.util.List;
 
 import utiles.Utiles;
 
-public class Ejercicios {
+public class Ejercicios2 {
 
     // 1. EJERCICIO 1; CALCULAR PRECIO DE LA ENTRADA
 	public static Integer precioEntrada(Integer edad, String dia, Boolean socio) {

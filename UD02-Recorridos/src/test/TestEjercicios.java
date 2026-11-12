@@ -3,29 +3,29 @@ package test;
 import java.util.ArrayList;
 import java.util.List;
 
-import ejercicios.Ejercicios;
+import ejercicios.Ejercicios3;
 
 public class TestEjercicios {
 
 	public static void main(String[] args) {
 		
 		System.out.println("----------TEST DE CONTADORES----------");
-		System.out.println(Ejercicios.cuentaParesDeLos20PrimerosNumeros());
-		System.out.println(Ejercicios.cuentaParesHasta(20));
-		System.out.println(Ejercicios.cuentaParesHasta(5000));
-		System.out.println(Ejercicios.cuentaParesEntre(1, 20));
-		System.out.println(Ejercicios.cuentaParesEn(List.of(5, 7, 3, 8, 7)));
+		System.out.println(Ejercicios3.cuentaParesDeLos20PrimerosNumeros());
+		System.out.println(Ejercicios3.cuentaParesHasta(20));
+		System.out.println(Ejercicios3.cuentaParesHasta(5000));
+		System.out.println(Ejercicios3.cuentaParesEntre(1, 20));
+		System.out.println(Ejercicios3.cuentaParesEn(List.of(5, 7, 3, 8, 7)));
 
 		System.out.println("----------TEST DE SUMA----------");
-		System.out.println(Ejercicios.sumaListaDeReales(List.of(5.5, 6.4, 9.52, 7.3, 3.1)));
+		System.out.println(Ejercicios3.sumaListaDeReales(List.of(5.5, 6.4, 9.52, 7.3, 3.1)));
 		
-		System.out.println(Ejercicios.sumaMayoresIgualesA(List.of(5.3,7.1,3.4), 5.0));
-		System.out.println(Ejercicios.seleccionaPrimos(List.of(5,7,3,8,7)));
+		System.out.println(Ejercicios3.sumaMayoresIgualesA(List.of(5.3,7.1,3.4), 5.0));
+		System.out.println(Ejercicios3.seleccionaPrimos(List.of(5,7,3,8,7)));
 		
 		System.out.println("Probando máximo--------");
-		Integer x = Ejercicios.maximo(List.of(7,8,3,2));
+		Integer x = Ejercicios3.maximo(List.of(7,8,3,2));
 		System.out.println(x);
-		Integer y = Ejercicios.maximo(List.of());
+		Integer y = Ejercicios3.maximo(List.of());
 		if (y!=null) {
 			System.out.println("El máximo es : "+y);
 		}
@@ -38,7 +38,7 @@ public class TestEjercicios {
 		List<Integer> lista = new ArrayList<Integer>();
 		lista.add(7);lista.add(8);lista.add(3);lista.add(2);
 		System.out.println("Lista sin ordenar: "+lista);
-		System.out.println("Lista ordenada: "+Ejercicios.ordena(lista));
+		System.out.println("Lista ordenada: "+Ejercicios3.ordena(lista));
 	}
 	
 }
