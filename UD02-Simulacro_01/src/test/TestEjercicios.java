@@ -2,7 +2,7 @@ package test;
 
 import java.util.ArrayList;
 import java.util.List;
-import ejercicios.Ejercicios;
+import ejercicios.Ejercicios1;
 import utiles.Utiles;
 
 public class TestEjercicios {
@@ -23,19 +23,19 @@ public class TestEjercicios {
         List<Integer> num = List.of(3, 9, 0, 4, 10, 0, -3, 5); 
         
         System.out.println("\n--- SUMAS ---");
-        System.out.println("Suma 1 (for-each): " + Ejercicios.suma1(numeros));
-        System.out.println("Suma 2 (for):      " + Ejercicios.suma2(numeros));
-        System.out.println("Suma 3 (while):    " + Ejercicios.suma3(numeros));
+        System.out.println("Suma 1 (for-each): " + Ejercicios1.suma1(numeros));
+        System.out.println("Suma 2 (for):      " + Ejercicios1.suma2(numeros));
+        System.out.println("Suma 3 (while):    " + Ejercicios1.suma3(numeros));
 
         System.out.println("\n--- CONTADORES ---");
-        System.out.println("Cantidad de pares:     " + Ejercicios.contarPares(numeros));
-        System.out.println("Cantidad de primos:    " + Ejercicios.contarPrimos(numeros));
-        System.out.println("Cantidad de perfectos: " + Ejercicios.contarPerfectos(numeros));
+        System.out.println("Cantidad de pares:     " + Ejercicios1.contarPares(numeros));
+        System.out.println("Cantidad de primos:    " + Ejercicios1.contarPrimos(numeros));
+        System.out.println("Cantidad de perfectos: " + Ejercicios1.contarPerfectos(numeros));
 
         System.out.println("\n--- MEDIAS ---");
-        System.out.println("Media 1 (for-each): " + Ejercicios.media1(numeros));
-        System.out.println("Media 2 (for):      " + Ejercicios.media2(numeros));
-        System.out.println("Media 3 (while):    " + Ejercicios.media3(numeros));
+        System.out.println("Media 1 (for-each): " + Ejercicios1.media1(numeros));
+        System.out.println("Media 2 (for):      " + Ejercicios1.media2(numeros));
+        System.out.println("Media 3 (while):    " + Ejercicios1.media3(numeros));
 
         System.out.println("\n--- PRUEBAS DE UTILES ---");
         System.out.println("¿7 es primo?       " + Utiles.esPrimo(7));
@@ -53,24 +53,24 @@ public class TestEjercicios {
         //----------EJERCICIOS DE LA PRUEBA----------
     
         System.out.println("\n--- CONTROL DE ACCESO AL BAILE DE LOS MONSTRUOS ---");
-        System.out.println(Ejercicios.puedeEntrar(16, true, "zombie"));   // true 
-        System.out.println(Ejercicios.puedeEntrar(15, false, "vampiro")); // true 
-        System.out.println(Ejercicios.puedeEntrar(15, false, "bruja"));   //false 
+        System.out.println(Ejercicios1.puedeEntrar(16, true, "zombie"));   // true 
+        System.out.println(Ejercicios1.puedeEntrar(15, false, "vampiro")); // true 
+        System.out.println(Ejercicios1.puedeEntrar(15, false, "bruja"));   //false 
     
         System.out.println("\n--- CLASIFICADOR DE CARAMELOS ---");
-        System.out.println(Ejercicios.cuentaCaramelos(lista, "dulce"));
+        System.out.println(Ejercicios1.cuentaCaramelos(lista, "dulce"));
         
         System.out.println("\n--- CONTADOR DE PASOS EN EL LABERINTO ---");
-        System.out.println(Ejercicios.pasosLaberinto(recorrido)); // 9 
+        System.out.println(Ejercicios1.pasosLaberinto(recorrido)); // 9 
         
         System.out.println("\n--- NIVEL MEDIO DE MAGIA EN LAS CALABAZAS ---");
-        System.out.println(Ejercicios.promedioMagia(magia)); // 8.67
+        System.out.println(Ejercicios1.promedioMagia(magia)); // 8.67
         
         System.out.println("\n--- RECURSIVIDAD: CUENTA ATRÁS DE SUSTOS ---");
-        Ejercicios.cuentaAtrasSustos(4); 
+        Ejercicios1.cuentaAtrasSustos(4); 
         
         System.out.println("\n--- LA SUMA ENTRE LOS DOS CEROS ---");
-        System.out.println(Ejercicios.sumaEntreCeros(num)); // 4+10=14
+        System.out.println(Ejercicios1.sumaEntreCeros(num)); // 4+10=14
         
     }
 }

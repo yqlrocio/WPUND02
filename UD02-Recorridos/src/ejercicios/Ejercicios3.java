@@ -5,11 +5,12 @@ import java.util.List;
 
 import utiles.Utiles;
 
-public class Ejercicios {
+public class Ejercicios3 {
 
 	// -------------------- 
 	//       CONTADOR 
 	// --------------------
+	
 	// De los 20 primeros números cúantos son pares?
 	
 	public static Integer cuentaParesDeLos20PrimerosNumeros() {
@@ -50,6 +51,7 @@ public class Ejercicios {
 			
 	// Método que cuenta cuántos pares tiene una lista de enteros que 
 	// se pasa como parámetro
+	
 //			public static Integer cuentaParesEn(List<Integer> lis) {
 //				Integer res = 0;
 //					for (int i = 0; i < lis.size(); i++) {
@@ -60,6 +62,7 @@ public class Ejercicios {
 //					}
 //					return res; 
 //			}
+	
 	public static Integer cuentaParesEn(List<Integer> lis) {
 		Integer res = 0;
 			for (Integer e:lis) {
@@ -100,6 +103,7 @@ public class Ejercicios {
 		}
 		return res; 
 	}
+	
 	//Suma de los elementos de una lista mayores o iguales que un cierto umbral
 	public static Double sumaMayoresIgualesA(List<Double> lis, Double umbral) {
 		Double res = 0.0; 

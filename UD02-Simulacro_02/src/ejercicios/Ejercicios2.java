@@ -127,7 +127,7 @@ public class Ejercicios2 {
 			return pos; 
 		}
 
-	    // 7. EJERCICIO 7
+	    // 7. EJERCICIO 7; CUENTA CÚANTAS PAREJAS CONSECUTIVAS SIN COLAPSARSE SUMAN UN MÚLTIPLO DE 5
 		public static Integer countNonOverlappingPairs(List<Integer> numbers) {
 			
 			Integer res = 0; 
